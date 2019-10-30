@@ -26,6 +26,6 @@ class HelloControllerTest {
     void index() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.ALL))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Implementing an Azure Pipeline")));
+                .andExpect(content().string(equalTo("Implementing an Azure Pipeline!")));
     }
 }
